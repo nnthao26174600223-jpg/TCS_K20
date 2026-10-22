@@ -1,0 +1,16 @@
+# --- Nhập dữ liệu và ép kiểu ---
+ma_phien = input("Nhập mã phiên: ")
+ma_may = input("Nhập mã máy: ")
+cong_suat_w = float(input("Nhập công suất W: "))
+so_phut = int(input("Nhập số phút sử dụng: "))
+don_gia_kwh = float(input("Nhập đơn giá: "))
+
+# --- Tính toán ---
+dien_nang_kwh = cong_suat_w * so_phut / 60 / 1000
+chi_phi = dien_nang_kwh * don_gia_kwh
+
+# --- In kết quả theo đúng định dạng mẫu đầu ra ---
+print("\nMã phiên:", ma_phien)
+print("Máy:", ma_may)
+print("Điện năng:", dien_nang_kwh)
+print("Chi phí:", chi_phi)
